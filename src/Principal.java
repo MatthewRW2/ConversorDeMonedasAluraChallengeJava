@@ -6,9 +6,6 @@ public class Principal {
 
         clienteTipoCambio.obtenerUltimosTiposDeCambio()
                 .thenAccept(respuesta -> {
-                    System.out.println("Respuesta recibida: ");
-                    System.out.println(respuesta);
-
                     boolean salir = false;
                     while (!salir) {
                         System.out.println("""
